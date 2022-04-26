@@ -1,0 +1,23 @@
+{
+  "name": "food-festival-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WinnieCWu/food-festival-app.git"
+  },
+  "author": "Winnie Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WinnieCWu/food-festival-app/issues"
+  },
+  "homepage": "https://github.com/WinnieCWu/food-festival-app#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
