@@ -170,4 +170,15 @@
       <div class="footer-copyright text-center py-3 text-white">© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</div>        
     </footer>
 </body>
+<script>
+  (function() {
+    //if conditional checks if it exists in global nav obj
+    if("serviceWorker" in navigator) {
+      //must have './'; absolute path would break deployed app
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => console.log("Service Worker registered successfully."))
+        .catch(error => console.log("Service Worker registration failed:", error));
+    }
+  })();
+  </script>
 </html>

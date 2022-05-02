@@ -1,5 +1,5 @@
 const webpack = require("webpack");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const path = require("path");
 
 module.exports = {
@@ -18,7 +18,7 @@ module.exports = {
             //this obj in the rules array will ID the type of files to pre-process
             //using the test property to find a regex (with .jpg ext)
             {
-                test: /\.jpg$/i,
+                test: /\.(png|jpe?g|gif)$/i,
                 use: [
                     {
                       loader: 'file-loader',
@@ -57,3 +57,4 @@ module.exports = {
     mode: "development"
 };
 
+// module.exports = config;
